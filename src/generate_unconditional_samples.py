@@ -17,6 +17,7 @@ def sample_model(
     temperature=1,
     top_k=0,
 ):
+
     enc = encoder.get_encoder(model_name)
     hparams = model.default_hparams()
     with open(os.path.join('models', model_name, 'hparams.json')) as f:
@@ -28,6 +29,7 @@ def sample_model(
         raise ValueError("Can't get samples longer than window size: %s" % hparams.n_ctx)
 
     with tf.Session(graph=tf.Graph()) as sess:
+        
         np.random.seed(seed)
         tf.set_random_seed(seed)
 
