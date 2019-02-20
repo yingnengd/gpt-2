@@ -6,7 +6,10 @@ import os
 import numpy as np
 import tensorflow as tf
 
+<<<<<<< HEAD
 #from src 
+=======
+>>>>>>> 99af6d7092bf5a49d44b53c4ab52b92f7f7dd7cd
 import model, sample, encoder
 
 def interact_model(
