@@ -17,7 +17,6 @@ def sample_model(
     temperature=1,
     top_k=0,
 ):
-
     enc = encoder.get_encoder(model_name)
     hparams = model.default_hparams()
     with open(os.path.join('models', model_name, 'hparams.json')) as f:
